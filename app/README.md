@@ -9,7 +9,7 @@
 cd app 
 
 # install dependencies
-$ yarn install 
+$ yarn install  
 
 # serve with hot reload at localhost:3000
 $ yarn dev
