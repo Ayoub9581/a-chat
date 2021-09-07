@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useTrail, animated, config } from 'react-spring';
 
-import NavItem from './navItem/navItem';
+import NavItem from './navitem/navitem';
 
 const LINKS = ['About', 'Login', 'Register'];
 

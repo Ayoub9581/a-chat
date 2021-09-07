@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { animated, useSpring, config } from 'react-spring';
 
-import { Contained } from '../layout/elements';
+import { Contained } from '../layout/element';
 import DesktopMenu from './desktopMenu';
 import MobileMenu from './mobileMenu/mobileMenu';
-import LogoNavbar from '../../components/UI/logoNavbar';
+import LogoNavbar from '@/components/UI/logoNavbar';
 
 const StyledHeader = styled(animated.header)`
   position: fixed;
   width: 100%;
   max-width: 100vw;
-  top: 0; 
+  top: 0;
   left: 0;
   z-index: 20;
   background: var(--navbar);

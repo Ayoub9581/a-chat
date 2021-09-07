@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Contained = styled.div`
   max-width: 124rem;
   z-index: 2;
   padding: 0 4rem;
@@ -11,23 +11,31 @@ export const Container = styled.div`
     padding: 0 3rem;
   }
 
-  @media {(props) => props.theme.mediaQueries.smaller } {
-      padding: 0 2rem;
+  @media ${(props) => props.theme.mediaQueries.smaller} {
+    padding: 0 2rem;
   }
 `;
 
-export const StyledSection = styled.div`
+export const StyledSection = styled.section`
   display: flex;
   position: relative;
   align-items: center;
   overflow-x: hidden !important;
   overflow-y: hidden !important;
-  justify-content: column;
+  justify-content: center;
   flex-direction: column;
   width: 100%;
-  min-height: ${({ fullHeight }) => (fullHeight ? '100vh' : 'auto')};
   min-height: ${({ fullHeight }) =>
-    fullHeight ? 'calc(var(--vh, 1vh) * 100' : 'auto'};
+    fullHeight
+      ? '100vh'
+      : 'auto'}; /* Fallback for browsers that do not support Custom Properties */
+  min-height: ${({ fullHeight }) =>
+    fullHeight
+      ? 'calc(var(--vh, 1vh) * 100)'
+      : 'auto'}; /* Fallback for browsers that do not support Custom Properties */
+  /* height: ${({ fullHeight }) =>
+    fullHeight ? 'calc(var(--vh, 1vh) * 100)' : '100%'}; */
+  /* min-height: ${({ fullHeight }) => (fullHeight ? '100vh' : '100%')}; */
 `;
 
 export const Wrapper = styled.div`
