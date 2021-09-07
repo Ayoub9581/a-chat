@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Tondu_Beta
+font link: https://www.fontspring.com/fonts/northern-block/tondu/tondu-beta
+font author: The Northern Block
+font author site: https://thenorthernblock.co.uk/
+
+
+icon designer: James Rainsford
+icon designer link: /TheGiantBaboon
+        
+
+fontColor: {"hex":"#dadada"}
+bgColor: {"hex":"#212121"}
+iconColor: {"hex":"#dadada"}
+
+      
